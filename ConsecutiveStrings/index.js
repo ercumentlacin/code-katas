@@ -34,47 +34,41 @@ function longestConsec(strarr, k) {
   }, '');
 }
 
-console.log(
-  longestConsec(['zone', 'abigail', 'theta', 'form', 'libe', 'zas'], 2),
-  'abigailtheta'
-);
-console.log(
-  longestConsec(
-    [
-      'ejjjjmmtthh',
-      'zxxuueeg',
-      'aanlljrrrxx',
-      'dqqqaaabbb',
-      'oocccffuucccjjjkkkjyyyeehh',
-    ],
-    1
-  ) == 'oocccffuucccjjjkkkjyyyeehh'
-);
-console.log(longestConsec([], 3) == '');
-console.log(
-  longestConsec(
-    [
-      'itvayloxrp',
-      'wkppqsztdkmvcuwvereiupccauycnjutlv',
-      'vweqilsfytihvrzlaodfixoyxvyuyvgpck',
-    ],
-    2
-  ) == 'wkppqsztdkmvcuwvereiupccauycnjutlvvweqilsfytihvrzlaodfixoyxvyuyvgpck'
-);
-console.log(
-  longestConsec(['wlwsasphmxx', 'owiaxujylentrklctozmymu', 'wpgozvxxiu'], 2) ==
-    'wlwsasphmxxowiaxujylentrklctozmymu'
-);
-console.log(
-  longestConsec(['zone', 'abigail', 'theta', 'form', 'libe', 'zas'], -2) == ''
-);
-console.log(
-  longestConsec(['it', 'wkppv', 'ixoyx', '3452', 'zzzzzzzzzzzz'], 3) ==
-    'ixoyx3452zzzzzzzzzzzz'
-);
-console.log(
-  longestConsec(['it', 'wkppv', 'ixoyx', '3452', 'zzzzzzzzzzzz'], 15) == ''
-);
-console.log(
-  longestConsec(['it', 'wkppv', 'ixoyx', '3452', 'zzzzzzzzzzzz'], 0) == ''
-);
+let textArr = ['zone', 'abigail', 'theta', 'form', 'libe', 'zas'];
+console.log(longestConsec(textArr, 2), 'abigailtheta');
+
+textArr = [
+  'ejjjjmmtthh',
+  'zxxuueeg',
+  'aanlljrrrxx',
+  'dqqqaaabbb',
+  'oocccffuucccjjjkkkjyyyeehh',
+];
+console.log(longestConsec(textArr, 1) == 'oocccffuucccjjjkkkjyyyeehh');
+
+textArr = [0];
+console.log(longestConsec(textArr, 3) == '');
+
+textArr = [
+  'itvayloxrp',
+  'wkppqsztdkmvcuwvereiupccauycnjutlv',
+  'vweqilsfytihvrzlaodfixoyxvyuyvgpck',
+];
+let expected =
+  'wkppqsztdkmvcuwvereiupccauycnjutlvvweqilsfytihvrzlaodfixoyxvyuyvgpck';
+console.log(longestConsec(textArr, 2) == expected);
+
+textArr = ['wlwsasphmxx', 'owiaxujylentrklctozmymu', 'wpgozvxxiu'];
+console.log(longestConsec(textArr, 2) == 'wlwsasphmxxowiaxujylentrklctozmymu');
+
+textArr = ['zone', 'abigail', 'theta', 'form', 'libe', 'zas'];
+console.log(longestConsec(textArr, -2) == '');
+
+textArr = ['it', 'wkppv', 'ixoyx', '3452', 'zzzzzzzzzzzz'];
+console.log(longestConsec(textArr, 3) == 'ixoyx3452zzzzzzzzzzzz');
+
+textArr = ['it', 'wkppv', 'ixoyx', '3452', 'zzzzzzzzzzzz'];
+console.log(longestConsec(textArr, 15) == '');
+
+textArr = ['it', 'wkppv', 'ixoyx', '3452', 'zzzzzzzzzzzz'];
+console.log(longestConsec(textArr, 0) == '');
