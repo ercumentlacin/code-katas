@@ -12,3 +12,4 @@
 | Reversed Words                        | [Link](/Reversed_Words/reverseWords.js)               | [Link](https://www.codewars.com/kata/51c8991dee245d7ddf00000e/javascript) | 8   |
 | Consecutive Strings                   | [Link](/ConsecutiveStrings/index.js)                  | [Link](https://www.codewars.com/kata/56a5d994ac971f1ac500003e/javascript) | 6   |
 | Beginner Series 2 Clock               | [Link](/Beginner_Series_2_Clock/index.js)             | [Link](https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/javascript) | 8   |
+| Highest Scoring Word                  | [Link](/Highest_Scoring_Word/index.js)                | [Link](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/javascript) | 6   |
