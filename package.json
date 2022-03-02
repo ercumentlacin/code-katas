@@ -1,0 +1,29 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "## Katas",
+  "main": "index.js",
+  "scripts": {
+    "create-kata": "node --no-warnings ./scripts/cataGenerator.js --link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ercumentlacin/code-katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ercumentlacin/code-katas/issues"
+  },
+  "homepage": "https://github.com/ercumentlacin/code-katas#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^13.4.0",
+    "yargs": "^17.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  }
+}
