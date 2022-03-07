@@ -1,7 +1,7 @@
 function towerBuilder(nFloors) {
   const tower = [];
-  const asteriks = '*';
-  const space = ' ';
+  const asteriks = "*";
+  const space = " ";
 
   // her sayi için bir n oluşturuyoruz
   for (let n = 1; n <= nFloors; n++) {
@@ -17,6 +17,4 @@ function towerBuilder(nFloors) {
   return tower;
 }
 
-console.log(towerBuilder(1), ['*']);
-console.log(towerBuilder(2), [' * ', '***']);
-console.log(towerBuilder(3), ['  *  ', ' *** ', '*****']);
+module.exports = towerBuilder;
