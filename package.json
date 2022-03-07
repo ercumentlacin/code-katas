@@ -4,7 +4,10 @@
   "description": "## Katas",
   "main": "index.js",
   "scripts": {
-    "create-kata": "node --no-warnings ./scripts/cataGenerator.js --link"
+    "create-kata": "node --no-warnings ./scripts/cataGenerator.js --link",
+    "generate-kata": "node scripts/cataGenerator.js --link",
+    "postgenerate-kata": "npx prettier --write ./README.md ",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,8 @@
     "yargs": "^17.3.1"
   },
   "devDependencies": {
-    "eslint": "^8.10.0"
+    "eslint": "^8.10.0",
+    "jest": "^27.5.1",
+    "prettier": "2.5.1"
   }
 }
